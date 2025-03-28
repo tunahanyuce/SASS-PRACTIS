@@ -1,9 +1,10 @@
-/* Error: expected ";".
- *   ,
- * 3 | @use './components/footer'
- *   |                           ^
- *   '
- *   scss\main.scss 3:27  root stylesheet */
+/* Error: Expected identifier.
+ *    ,
+ * 21 |     @include
+ *    |             ^
+ *    '
+ *   scss\components\_nav.scss 21:13  @use
+ *   scss\main.scss 4:1               root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: expected \";\".\a   \2577 \a 3 \2502  @use './components/footer'\d\a   \2502                            ^\a   \2575 \a   scss\\main.scss 3:27  root stylesheet";
+  content: "Error: Expected identifier.\a    \2577 \a 21 \2502      @include\d\a    \2502              ^\a    \2575 \a   scss\\components\\_nav.scss 21:13  @use\a   scss\\main.scss 4:1               root stylesheet";
 }
