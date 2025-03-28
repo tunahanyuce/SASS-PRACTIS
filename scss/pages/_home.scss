@@ -1,11 +1,14 @@
-/* -------------------------------------------------------------------------- */
-/*                                 HOME PAGES                                 */
-/* -------------------------------------------------------------------------- */
+//*****************************************************
+//*   HOME PAGE
+//*****************************************************
+
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
+
+
 .home-bgImg-container{
-    @include mixins.bgImg(100vh,"variables.$pathname1");
+    @include mixins.bgImg(100vh, variables.$pathname1);
 }
 
 .home{
@@ -14,14 +17,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    &_name{
+    text-align: center;
+    &__name{
         font-size: 5rem;
         padding-bottom: 1rem;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid variables.$text-color;
         width: 100%;
         &--last{
-            color:red
-            // font-weight: bold;
+            color: red;
+            font-weight: bold;
         }
-    }
+    } 
 }
