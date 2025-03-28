@@ -6,12 +6,13 @@
 //component
 @use './components/footer';
 @use './components/nav';
-@use './components/responsive';
 //pages
 @use './pages/about';
 @use './pages/contact';
 @use './pages/home';
 @use './pages/projects';
+
+@use './components/responsive';
 
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css';
 
